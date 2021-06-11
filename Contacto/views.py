@@ -17,6 +17,7 @@ def contacto(request):
             return render(request, "Contacto/gracias.html")
     else:
         miForm = FormularioContacto() 
-    ctx = {"form": miForm}
+    ctx = {"form": miForm} 
+    
 
     return render(request, "Contacto/contacto.html", ctx)
