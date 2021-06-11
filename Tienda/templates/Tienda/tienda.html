@@ -1,0 +1,31 @@
+{% extends 'gestionProyecto/base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+<title>Tienda</title>
+<div class="row">
+    <div class="col-lg-2" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.4s">
+        <div class="features-small-item">
+            <div class="icon">
+                <i><img src="{% static 'gestionProyecto/images/featured-item-01.png' %}" alt=""></i>
+            </div>
+            <h5 class="features-title">Producto N1</h5>
+            <p>Precio : $30.000</p>
+        </div>
+    </div>  
+        <div class="col-lg-2" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.4s">
+            <div class="features-small-item">
+                <div class="icon">
+                    <i><img src="{% static 'gestionProyecto/images/featured-item-01.png' %}" alt=""></i>
+                </div>
+                <h5 class="features-title">Producto N1</h5>
+                <p>Precio : $30.000</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+    

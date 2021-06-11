@@ -1,0 +1,47 @@
+{% extends "gestionProyecto/base.html" %}
+
+{% load static %}
+
+{% block content %}
+
+{% for p in post %}
+ 
+    
+<section class="section" id="blog">
+    <div class="container">
+      <div class="row">
+        <div class = "col-lg-3 col-md-3 col-sm-3">
+            <div class="blog-post-thumb">
+                <div class="blog-content">
+                    <h3>
+                        <h2> <p>Categoria</p></h2>
+                        {% for c in p.categorias.all %}
+                        <a href ="{% url 'categoria' c.id %}" class = "linksCategorias" > {{c.nombre}} </a>
+                        {% endfor %}
+                    </h3>
+                    <h3>
+                        <h2><p>Titulo</p></h2>
+                        <p>{{p.titulo}}</p>
+                    </h3>
+                    <div class="img">
+                        <div style="width: 300px; height: 300px;">
+                            <img src="{{p.imagen.url}}" alt="">
+                        </div>
+                    </div>
+                    <div class="text"> 
+                       <p>Autor:  {{p.autor}}</p>
+                       <p>{{p.contenido}}</p>
+                    </div>
+                    <a href="#" class="main-button">Ver Información</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    
+{% endfor %}
+
+
+{% endblock %}

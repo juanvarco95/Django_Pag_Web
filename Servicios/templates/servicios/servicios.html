@@ -1,0 +1,43 @@
+{% extends "gestionProyecto/base.html" %}
+{% load static %}
+
+{% block content %}
+
+  
+  <section class="section" id="blog">
+    <div class="container">
+        <div class="row">
+            {% for s in servicios %}
+            <div class = "col-lg-3 col-md-3 col-sm-3">
+                <div class="blog-post-thumb" >
+                    <div class="blog-content" >
+                            <h1><p>Título</p></h1>
+                            <h2><p>{{s.titulo}}</p></h2>
+                            
+                        <div class="img">
+                            <div style="max-width: 300px; min-height: 300px;">
+                                <img src="{{s.imagen.url}}" alt="">
+                            </div>
+                        </div>
+                        <div class="text">
+                            {{s.contenido}}
+                        </div>
+                        
+                        <a href="#" class="main-button">Ver Información</a>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+
+
+ 
+  
+ 
+
+{% endblock %}
+
+  
