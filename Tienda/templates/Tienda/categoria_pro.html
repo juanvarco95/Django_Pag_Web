@@ -13,19 +13,19 @@
 <section class="section" id="blog">
     <div class="container">
         <div class="row">
-            {% for p in post %}
+            {% for p in producto %}
             <div class = "col-lg-3 col-md-3 col-sm-3">
                 <div class="blog-post-thumb" >
                     <div class="blog-content" >
                         <h3>
                             <h2> <p>Categoria</p></h2>
-                            {% for c in p.categorias.all %}
-                            <a href ="{% url 'categoria' c.id %}" class = "linksCategorias" > {{c.nombre}} </a>
+                            {% for c in p.pro_categorias.all %}
+                            <a href ="{% url 'p_categoria' c.id %}" class = "linksCategorias" > {{c.nombre}} </a>
                             {% endfor %}
                         </h3>
                         <h3>
                             <h2><p>Titulo</p></h2>
-                            <p>{{p.titulo}}</p>
+                            <p>{{p.nombre}}</p>
                         </h3>
                         <div class="img">
                             <div style="max-width: 300px; min-height: 300px;">
@@ -33,8 +33,7 @@
                             </div>
                         </div>
                         <div class="text"> 
-                        <p>Autor:  {{p.autor}}</p>
-                        <p>{{p.contenido}}</p>
+                        <p>{{p.descripcion}}</p>
                         </div>
                         <a href="#" class="main-button">Ver Información</a>
                     </div>

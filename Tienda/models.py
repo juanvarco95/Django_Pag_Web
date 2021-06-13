@@ -16,7 +16,7 @@ class T_Producto(models.Model):
     descripcion = models.CharField(max_length = 50, verbose_name = "Descripción")
     imagen = models.ImageField(upload_to = "producto", null = True, blank = True)
     p_categorias = models.ForeignKey(User, on_delete = models.CASCADE, null = True)
-    categorias =  models.ManyToManyField(prueba_Categoria, verbose_name = "Categorias") 
+    pro_categorias =  models.ManyToManyField(prueba_Categoria, verbose_name = "Categorias") 
     created = models.DateTimeField(auto_now_add = True)
     updated = models.DateTimeField(auto_now_add = True)
 

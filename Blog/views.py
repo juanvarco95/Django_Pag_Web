@@ -1,5 +1,5 @@
 from django.shortcuts import get_object_or_404, render
-from Blog.models import Categoria, Post
+from .models import Categoria, Post
 
 def blogs(request):
     p = Post.objects.all()
