@@ -10,7 +10,7 @@ class T_Producto_Admin(admin.ModelAdmin):
 class prueba_Admin(admin.ModelAdmin):
     list_display = ('nombre',)
 
-
+ 
 admin.site.register(prueba_Categoria, prueba_Admin)    
 admin.site.register(T_Producto, T_Producto_Admin)
 
