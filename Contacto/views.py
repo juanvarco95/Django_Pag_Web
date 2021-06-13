@@ -11,8 +11,8 @@ def contacto(request):
 
         if miForm.is_valid(): 
             infoForm = miForm.cleaned_data
-            message = infoForm['mensaje'] + " " + infoForm['email']
-            send_mail(infoForm['nombre'], message , infoForm.get('email', ''), ['juanvarco3d@gmail.com'],)
+            mes = infoForm['asunto'] + " " + infoForm['mensaje'] + " From: " + infoForm['email']
+            send_mail(infoForm['nombre'], mes , infoForm.get('email', ''), ['juanvarco3d@gmail.com'],)
 
             return render(request, "Contacto/gracias.html")
     else:
