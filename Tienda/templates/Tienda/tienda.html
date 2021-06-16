@@ -12,11 +12,11 @@
 
  
 <section class="section" id="blog">
+    <div style="float: right; padding: 30px;">
+        {% include "carro/widget.html" %}
+    </div>
+   
     <div class="container">
-        <div style="float: right;">
-            <p>Total: ${{importe_total_carro}}</p>
-            {% include "carro/widget.html" %}
-        </div>
         <div class="row">
             {% for p in producto %}
             <div class = "col-lg-3 col-md-3 col-sm-3">

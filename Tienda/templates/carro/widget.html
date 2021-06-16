@@ -2,10 +2,10 @@
     <thead>
         <tr>
             <th colspan = "3" class = "text-center">
-                Carro Compras
+                Carrito de Compras
             </th>
         </tr>
-        <tr style = "color: orange;">
+        <tr style = "color: orange;" class = "text-center">
             <th>Producto</th>
             <th>Cantidad</th>
             <th>Suma</th>
@@ -18,7 +18,14 @@
                 <tr class = "text-center">
                     <td>{{value.nombre}}</td>
                     <td>{{value.cantidad}}</td>
-                </tr>
+                
+                <td>
+                    <a href = "{% url 'carro:agregar' value.producto_id %}" class="button-green">+</a>
+                    <a href = "{% url 'carro:restar' value.producto_id %}" class="button-orange">-</a>
+                    <a href = "{% url 'carro:eliminar' value.producto_id %}" class="button-red">x</a>
+                    {{value.precio}} 
+                </td>
+                 </tr>
 
             {% endfor %}
         {% else %}
@@ -30,6 +37,20 @@
                 </td>
             </tr>
         {% endif %}
+       
 
     </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="3">
+                <h2><p>Total= ${{importe_total_carro}}</p></h2><hr>
+                <a href = "{% url 'carro:limpiar' %}" class="button-blue">Limpiar</a>
+            </td>
+            
+            
+            
+        </tr>
+        
+
+    </tfoot>
 </table>
