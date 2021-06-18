@@ -328,7 +328,7 @@ a.main-button-slider {
 
 
 a.main-button-slider:hover {
-  background-color: #8261ee;
+  background-color: #61ee80;
 }
 
 a.main-button {
@@ -651,7 +651,7 @@ welcome
  
   background-position: center center;
 
-  height: 50vh;
+  height: 30vh;
 }
 
 .welcome-area .header-text {
@@ -1591,7 +1591,7 @@ preloader
 }
 
 .linksCategorias {
-  color: rgba(234, 77, 255, 0.993) !important;
+  color: rgba(252, 235, 7, 0.993) !important;
   text-decoration: underline;
 }
 
@@ -1612,6 +1612,24 @@ preloader
   border-radius: 20px;
   padding: 12px 20px;
   background-color: #09ff00;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 0.25px;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+
+}
+
+.button-rose {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-size: 13px;
+  border-radius: 20px;
+  padding: 12px 20px;
+  background-color: #fa6fff;
   text-transform: uppercase;
   color: #fff;
   letter-spacing: 0.25px;
@@ -1692,4 +1710,44 @@ preloader
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
 
+}
+
+.button-green2 {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-size: 13px;
+  border-radius: 20px;
+  padding: 12px 20px;
+  background-color: #39db8f;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 0.25px;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+
+}
+
+.table-bordered {
+  border-radius: 30px;
+  border-collapse: collapse;
+  
+}
+
+.table-dark {
+  border-radius: 30px;
+  
+}
+
+#imgdiv { width:40vw;
+  display:table-cell;
+  vertical-align:middle; 
+  text-align:center;
+}
+img {
+  max-width:100%;
+  height:auto;
+  max-height:100%;
 }
