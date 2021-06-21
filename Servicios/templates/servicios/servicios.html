@@ -6,13 +6,16 @@
   
   <section class="section" id="blog">
     <div class="container">
+        <div class="center-heading">
+            <h2 class="section-title">Servicios</h2>
+        </div>
         <div class="row">
             {% for s in servicios %}
             <div class = "col-lg-3 col-md-3 col-sm-3">
                 <div class="blog-post-thumb" >
                     <div class="blog-content" >
-                            <h1><p>Título</p></h1>
-                            <h2><p>{{s.titulo}}</p></h2>
+                         
+                            <h3><p>{{s.titulo}}</p></h3>
                             
                         <div class="img">
                             <div style="max-width: 300px; min-height: 300px;">
@@ -23,7 +26,7 @@
                             {{s.contenido}}
                         </div>
                         
-                        <a href="#" class="main-button">Ver Información</a>
+                        <a href="#" class="button-blue">Ver Información</a>
                     </div>
                 </div>
             </div>
