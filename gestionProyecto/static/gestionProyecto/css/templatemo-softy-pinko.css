@@ -651,7 +651,7 @@ welcome
  
   background-position: center center;
 
-  height: 30vh;
+  height: 20vh;
 }
 
 .welcome-area .header-text {
@@ -772,7 +772,7 @@ features
 }
 
 .features-small-item:hover .icon {
-  background-color: #ff589e;
+  background-color: #585bff;
 }
 
 .features-small-item .icon {
@@ -786,7 +786,7 @@ features
   margin: auto;
   position: relative;
   margin-bottom: 30px;
-  background: #8261ee;
+  background: #eea561;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
